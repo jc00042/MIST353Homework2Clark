@@ -1,0 +1,100 @@
+﻿@page
+@model MIST353Homework2Clark.Pages.SearchResultsPLModel
+@{
+}
+
+<head>
+    <link rel="stylesheet" hreft="site.css" />
+    <style>
+        body{
+            background-image: url('https://e0.365dm.com/20/04/768x432/skysports-premier_league_highlights_4963346.jpg?20200406133230');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+       
+    </style>
+</head>
+
+<h1 class="h1">Premier League Predictions</h1>
+
+<body>
+    <h2>Please fill out the following information for results.</h2>
+    <div>
+        <div class="dropdown">
+            <button onclick="dropbtnFunction()" class="dropbtn">Choose Opponent</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a>Manchester United</a>
+                <a>Liverpool</a>
+                <a>Chelsea</a>
+                <a>Arsenal</a>
+                <a>Newcastle</a>
+                <a>Brentford</a>
+                <a>Tottenham</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="dropbtnFunction()" class="dropbtn">Choose Location</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a>Manchester, UK</a>
+                <a>Liverpool, UK</a>
+                <a>London, UK</a>
+                <a>Tyne, UK</a>
+                <a>Brentford, UK</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="dropbtnFunction()" class="dropbtn">Choose Temperature</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a>80</a>
+                <a>75</a>
+                <a>70</a>
+                <a>65</a>
+                <a>60</a>
+                <a>55</a>
+                <a>50</a>
+            </div>
+        </div>
+
+    </div>
+   
+    <div>
+        <br/>
+        <h3>Click the button below to see results:</h3>><button>Search</button>
+    </div>
+
+
+    <div>
+        <h2>Previous Club Result Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td class="text-center">Wins</td>
+                    <td class="text-center">Loses</td>
+                    <td class="text-center">Best Result</td>
+                    <td class="text-center">Worst Result</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">0</td>
+                    <td class="text-center">0</td>
+                    <td class ="text-center">0</td>
+                    <td class="text-center">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Recommended Jersey for the club during this weather:</h2>
+        <img src="shortjersey.jpg" alt="SSJersey"/>
+    </div>
+</body>
+
+
