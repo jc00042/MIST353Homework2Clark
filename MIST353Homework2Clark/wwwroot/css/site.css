@@ -22,7 +22,7 @@ body {
 }
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color: darkorange;
     color: white;
     padding: 8px;
     font-size: 16px;
@@ -31,7 +31,7 @@ body {
 }
 
     .dropbtn:hover, .dropbtn:focus {
-        background-color: #3498DB;
+        background-color: darkorange;
     }
 
 #myInput {
@@ -52,12 +52,13 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    color: black;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
+    background-color: white;
     min-width: 230px;
     overflow: auto;
     border: 1px solid #ddd;
@@ -72,7 +73,7 @@ body {
     }
 
 .dropdown a:hover {
-    background-color: lightblue;
+    background-color: lightgrey;
 }
 
 .show {
@@ -82,9 +83,15 @@ body {
 table, td, th {
     border: 1px solid;
     background-color: white;
+    color: black;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.image-size {
+    width: 500px;
+    height: 500px;
 }
